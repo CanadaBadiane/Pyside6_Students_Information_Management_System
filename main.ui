@@ -14,13 +14,13 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame_2">
+   <widget class="QFrame" name="info_frame">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>10</y>
-      <width>621</width>
-      <height>211</height>
+      <x>30</x>
+      <y>100</y>
+      <width>751</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -29,178 +29,93 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLineEdit" name="lineEdit_4">
+    <widget class="QSplitter" name="splitter_7">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>150</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
+       <x>80</x>
        <y>20</y>
-       <width>171</width>
-       <height>16</height>
+       <width>575</width>
+       <height>79</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Students Information System</string>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>150</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_3">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>160</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>60</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>110</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>70</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>110</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_2">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>130</y>
-       <width>80</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>80</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_5">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>20</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>80</y>
-       <width>80</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>130</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>20</y>
-       <width>49</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Student ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>First Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="lineEdit"/>
+       <widget class="QLineEdit" name="lineEdit_4"/>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_6">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_4">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>State</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>City</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Email Address</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_5">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_5"/>
+       <widget class="QComboBox" name="comboBox"/>
+       <widget class="QComboBox" name="comboBox_2"/>
+      </widget>
+     </widget>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_3">
+   <widget class="QFrame" name="function_frame">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>230</y>
-      <width>741</width>
-      <height>80</height>
+      <width>751</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -209,91 +124,121 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="delete_btn">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <x>600</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Delete</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/delete.svg</normaloff>icons/delete.svg</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="add_btn">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Add</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/add.svg</normaloff>icons/add.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="search_btn">
      <property name="geometry">
       <rect>
        <x>370</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/search.svg</normaloff>icons/search.svg</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="select_btn">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <x>255</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Select</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/select.svg</normaloff>icons/select.svg</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="update_btn">
      <property name="geometry">
       <rect>
        <x>140</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Update</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/update.svg</normaloff>icons/update.svg</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="clear_btn">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>30</y>
-       <width>75</width>
-       <height>24</height>
+       <x>485</x>
+       <y>10</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/clear.svg</normaloff>icons/clear.svg</iconset>
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_4">
+   <widget class="QFrame" name="result_frame">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>330</y>
-      <width>701</width>
+      <x>30</x>
+      <y>300</y>
+      <width>751</width>
       <height>201</height>
      </rect>
     </property>
@@ -307,8 +252,8 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>41</y>
-       <width>641</width>
+       <y>30</y>
+       <width>681</width>
        <height>131</height>
       </rect>
      </property>
@@ -372,6 +317,38 @@
        <set>AlignLeading|AlignVCenter</set>
       </property>
      </column>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>20</y>
+      <width>751</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="title_label">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Students Information System</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
     </widget>
    </widget>
   </widget>
