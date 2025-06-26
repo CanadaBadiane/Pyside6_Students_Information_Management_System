@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Form</class>
+ <widget class="QMainWindow" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -12,6 +12,84 @@
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Styles pour le conteneur info_frame */
+#info_frame {
+  background-color: #1e1e1e; /* gris foncé / quasi noir */
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style général des labels, champs de texte, boutons, etc. */
+#info_frame QLabel,
+#info_frame QLineEdit,
+#info_frame QComboBox,
+#function_frame QPushButton,
+QHeaderView::section {
+  font-family: Segoe UI Semibold;
+  font-size: 12px;
+  color: #f0f0f0; /* texte clair sur fond foncé */
+}
+
+/* Champs de saisie et boîtes déroulantes */
+#info_frame QLineEdit,
+#info_frame QComboBox {
+  padding: 4px 5px;
+  background-color: #2a2a2a;
+  border: 1px solid #5a5a5a;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+/* Styles quand le champ a le focus */
+#info_frame QLineEdit:focus,
+#info_frame QComboBox:focus {
+  border-color: #3399ff;
+}
+
+/* Partie déroulante des ComboBox */
+QComboBox::drop-down {
+  background: transparent;
+  border: none;
+  margin-right: 5px;
+}
+
+/* Flèche de ComboBox */
+QComboBox::down-arrow {
+  image: url(:/icons/expand_more_light.svg); /* Utilise une icône claire adaptée au dark mode */
+}
+
+/* Frame de résultats */
+#result_frame {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+/* Tableau */
+QTableWidget {
+  border-radius: 5px;
+  border: 1px solid #3a3a3a;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* En-tête de tableau */
+QHeaderView::section {
+  border: none;
+  border-bottom: 1px solid #3399ff;
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+  text-align: left;
+  padding: 3px 5px;
+}
+
+/* Éléments du tableau */
+QTableWidget::item {
+  border-bottom: 1px solid #3399ff;
+  padding-left: 5px;
+  color: #ffffff;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="info_frame">
@@ -337,11 +415,18 @@
     <widget class="QLabel" name="title_label">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>20</y>
-       <width>171</width>
-       <height>16</height>
+       <x>10</x>
+       <y>0</y>
+       <width>701</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Script MT</family>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>Students Information System</string>
